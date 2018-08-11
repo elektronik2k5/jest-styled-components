@@ -14,6 +14,7 @@
   "license": "MIT",
   "scripts": {
     "precommit": "lint-staged",
+    "prepush": "yarn test",
     "test": "yarn test:web && yarn test:native && yarn test:preact && yarn test:ts",
     "test:web": "jest",
     "test:web:watch": "jest --watch",
@@ -22,7 +23,7 @@
     "test:ts": "tsc --strict ./typings/index.d.ts"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-jest": "^23.4.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -30,17 +31,17 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.4.1",
     "enzyme-adapter-react-16": "^1.2.0",
-    "enzyme-to-json": "^3.3.1",
-    "eslint": "^3.17.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-react": "^6.10.3",
     "husky": "^0.14.3",
     "jest": "^23.5.0",
-    "lint-staged": "^7.0.0",
+    "lint-staged": "^7.2.0",
     "preact": "^8.3.0",
     "preact-compat": "^3.18.2",
     "preact-render-to-json": "^3.6.6",
@@ -53,7 +54,7 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "css": "^2.2.1"
+    "css": "^2.2.3"
   },
   "peerDependencies": {
     "styled-components": "^2.0.0 || ^3.0.2"
